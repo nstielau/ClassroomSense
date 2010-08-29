@@ -12,6 +12,12 @@
     <%= widget "Total Absences" do %>
       <img style="width:375px" src="/images/graphs/dashboard_total_absent.jpg"/>
     <% end %>
+    <%= widget "Teachers Absent Today" do %>
+    <ul>
+      <li>Teacher <a href="/pages/teacher_detail">Louisa Bell</a> Room 121</li>
+      <li>Teacher <a href="/pages/teacher_detail">Manuel Santiago</a> Room 109</li>
+    </ul>
+    <% end %>
   </div>
   <div class="grid_8">
     <%= widget "Notable Events" do %>
@@ -26,12 +32,6 @@
     <% end %>
   </div>
   <div class="grid_8">
-    <%= widget "Teachers Absent Today" do %>
-    <ul>
-      <li>Teacher <a href="/pages/teacher_detail">Louisa Bell</a> Room 121</li>
-      <li>Teacher <a href="/pages/teacher_detail">Manuel Santiago</a> Room 109</li>
-    </ul>
-    <% end %>
     <%= widget "Test Scores" do %>
       <img src="/images/graphs/dashboard_test_scores_2.jpg"/>
     <% end %>
