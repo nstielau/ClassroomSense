@@ -3,7 +3,7 @@ h1 {
     margin: 0;
 }
 .bordered {
-    border: 1px solid #bebebe;
+    border: 1px solid #ddd;
 }
 
 #header {
@@ -21,7 +21,6 @@ h1 {
 }
 
 .widget {
-    border: 1px solid #bebebe;
     padding: 5px;
     margin: 5px;
     overflow: hidden;

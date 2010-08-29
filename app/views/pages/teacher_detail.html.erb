@@ -19,35 +19,51 @@
     <%= widget "Contact Info" do %>
       <%= render :partial => "teacher_contact_info" %>
     <% end %>
+    <%= widget "Attendance" do %>
+        <img src="/images/graphs/student_detail_tests_math.jpg"/>
+    <% end %>
+  </div>
+  <div class="grid_15">
     <%= widget "Schedule" do %>
       <table>
         <thead>
           <tr>
-            <th>Class</th>
-            <th>Room</th>
+            <th> Class </th>
+            <th> Room </th>
+            <th> Section </th>
+            <th> # Referrals </th>
+            <th> % Proficient </th>
+            <th> Avg Absenteeism </th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Math 1</td>
             <td>101</td>
+            <td>2</td>
+            <td>6</td>
+            <td>59%</td>
+            <td>1/week</td>
           </tr>
           <tr>
             <td>Social Studies</td>
             <td>137</td>
+            <td>1</td>
+            <td>9</td>
+            <td>52%</td>
+            <td>2/week</td>
           </tr>
           <tr>
-            <td>History</td>
+            <td>AP History</td>
             <td>121</td>
+            <td>4</td>
+            <td>2</td>
+            <td>68%</td>
+            <td>0.8/week</td>
           </tr>
         </tbody>
       </table>
     <% end %>
-  </div>
-  <div class="grid_8">
-
-  </div>
-  <div class="grid_7">
   </div>
   <div class="clear"></div>
 </div>
