@@ -10,12 +10,12 @@
       <img src="/images/graphs/dash_absent_today.jpg"/>
     <% end %>
     <%= widget "Total Absences" do %>
-      <img style="width:375px" src="/images/graphs/dashboard_total_absent.jpg"/>
+      <div id="placeholder" style="width:285px;height:150px;"></div>
     <% end %>
     <%= widget "Teachers Absent Today" do %>
     <ul>
-      <li>Teacher <a href="/pages/teacher_detail">Louisa Bell</a> Room 121</li>
-      <li>Teacher <a href="/pages/teacher_detail">Manuel Santiago</a> Room 109</li>
+      <li><a href="/pages/teacher_detail">Louisa Bell</a> Current: Algebra 2, Room 121</li>
+      <li><a href="/pages/teacher_detail">Manuel Santiago</a> 10:45am: English 1, Room 109</li>
     </ul>
     <% end %>
   </div>
@@ -41,3 +41,33 @@
   </div>
   <div class="clear"></div>
 </div>
+
+<script id="source" language="javascript" type="text/javascript">
+var plot;
+$(function () {
+    // generate a dataset
+    var d1 = [[0,100], [1,50], [2,20], [3,10], [4, 16]];
+
+    var data = [{ data: d1, color: "#ccc" }];
+
+    var placeholder = $("#placeholder");
+
+    var ticks = [[0.25, "1 day"], [1.25, "2-3 days"], [2.25, "4-6 days"], [3.25, "6-10 days"], [4.25, "> 10 days"]];
+
+    // plot it
+    plot = $.plot(placeholder, data, {
+        clickable: true, hoverable: true, tickSize: 0,
+        bars: { hoverable: true, clickable: true, show: true, barWidth: 0.5, fill: 0.9 },
+        xaxis: { ticks: ticks, autoscaleMargin: 0.02 },
+        grid: { tickColor: "rgba(255, 255, 0, 0)", hoverable: true, clickable: true, show: true, borderColor: "rbga(255,255,255,0)" }
+    });
+
+    $("#placeholder").bind("plotclick", function (event, pos, item) {
+        if (item) {
+          plot.highlight(item.series, item.datapoint);
+          location.href = "/pages/search_results?bucket=" + ticks[item.datapoint[0]][1].toString().replace(' ', '_');
+        }
+    });
+
+});
+</script>

@@ -3,7 +3,7 @@
 <head>
   <title>Classroom sense</title>
   <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag 'jquery' %>
+  <%= javascript_include_tag 'jquery', 'jquery.flot' %>
   <%= csrf_meta_tag %>
 </head>
 <body>
@@ -34,11 +34,9 @@
 <div class="container_24">
   <div class="grid_12">
     <input type="text" name="search" />
-    <input type="submit" onclick="javascript: alert('Serach does not work yet, but good to know you tried');" value="Search for students and teachers" />
+    <input type="submit" onclick="javascript: window.location = '/pages/search_results';" value="Search for students and teachers" />
   </div>
   <div class="grid_11">
-    6 people in your network online now:
-    <input type="submit" onclick="javascript: alert('Serach does not work yet, but good to know you tried');" value="Chat now" />
   </div>
 </div>
 <% end %>

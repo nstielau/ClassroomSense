@@ -1,0 +1,42 @@
+<div class="container_24">
+  <div class="grid_20">
+    <h1>
+      <% if params[:bucket] %>
+      Students with <%= params[:bucket].to_s.gsub("_", " ") -%> absent
+      <% else %>
+      Search Results
+      <% end %>
+    </h1>
+  </div>
+</div>
+<div class="container_24">
+  <div class="grid_20">
+    <a href="/pages/dashboard">Back to dashboard</a>
+  </div>
+</div>
+<div class="container_24">
+  <div class="grid_22">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Erica Benson</td>
+          <td><a href="/pages/student_detail">Details</a></td>
+        </tr>
+        <tr>
+          <td>Tek Kim</td>
+          <td><a href="/pages/student_detail">Details</a></td>
+        </tr>
+        <tr>
+          <td>Todd Stevenson</td>
+          <td><a href="/pages/student_detail">Details</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
