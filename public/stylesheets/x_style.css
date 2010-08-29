@@ -72,3 +72,6 @@ a {
 a:hover {
     text-decoration: none;
 }
+ul.education_news, ul.education_news li {
+    list-style: none;
+}
