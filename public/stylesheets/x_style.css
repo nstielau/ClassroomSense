@@ -1,0 +1,37 @@
+h1 {
+    padding: 0;
+    margin: 0;
+}
+.bordered {
+    border: 1px solid #bebebe;
+}
+
+#header {
+    background-color: #D8C2B4;
+}
+
+#header h2 {
+    padding: 0;
+    margin: 0;
+}
+
+#header div {
+    height: 115px;
+    overflow: hidden;
+}
+
+.widget {
+    border: 1px solid #bebebe;
+    padding: 5px;
+    margin: 5px;
+}
+
+.widget h2 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 125%;
+}
+
+ul.address, li.address {
+    list-style: none;
+}

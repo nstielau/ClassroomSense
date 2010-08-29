@@ -1,0 +1,68 @@
+<div class="container_24">
+  <div class="grid_20">
+    <h1>Student Detail</h1>
+  </div>
+</div>
+<div class="container_24">
+  <div class="grid_20">
+    <a href="/pages/dashboard">Back to dashboard</a>
+    <a href="/pages/student_overview">Back to student overview</a>
+  </div>
+</div>
+<div class="container_24">
+  <div class="grid_8">
+    <%= widget "Information" do %>
+      <%= render :partial => "student_info" %>
+    <% end %>
+    <%= widget "Contact Info" do %>
+      <%= render :partial => "student_contact_info" %>
+    <% end %>
+    <%= widget "Schedule" do %>
+      <table>
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>Room</th>
+            <th>Teacher</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Math 1</td>
+            <td>101</td>
+            <td><a href="/pages/teacher_detail">Mary Smith</a></td>
+          </tr>
+          <tr>
+            <td>Social Studies</td>
+            <td>137</td>
+            <td><a href="/pages/teacher_detail">Joe Arrington</a></td>
+          </tr>
+          <tr>
+            <td>History</td>
+            <td>121</td>
+            <td><a href="/pages/teacher_detail">Doug Melzer</a></td>
+          </tr>
+        </tbody>
+      </table>
+    <% end %>
+  </div>
+  <div class="grid_8">
+    <%= widget "Attendences" do %>
+      <p>GRAPH</p>
+    <% end %>
+    <%= widget "Disciplined" do %>
+      <ul>
+        <li>Referrals: <%= (rand * 50).to_i %></li>
+        <li>Truancy: <%= (rand * 50).to_i %></li>
+        <li>Detentions: <%= (rand * 50).to_i %></li>
+        <li>Suspensions: <%= (rand * 50).to_i %></li>
+      </ul>
+    <% end %>
+  </div>
+  <div class="grid_7">
+    <%= widget "Test Scores" do %>
+      <p>GRAPH</p>
+    <% end %>
+  </div>
+  <div class="clear"></div>
+</div>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Classroom sense</title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag 'jquery' %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+<div class="container_24" id="header">
+  <div class="grid_4">
+    <img src="/images/logo.jpg"/>
+  </div>
+  <div class="grid_5">
+    <h2>Weather</h2>
+    <div style="float: left; border: none;">
+      65°F<br/>
+      Current: Partly Cloudy<br/>
+      Wind: W at 20 mph<br/>
+      Humidity: 59%<br/>
+    </div>
+    <img style="float:left;padding:5px;" src="/images/partly_cloudy.gif"/>
+  </div>
+  <div class="grid_4"><h2 style="font-size: 250%"><%= Time.now.strftime("%B") %><br/><%= Time.now.strftime("%d %Y") %></h2></div>
+  <div class="grid_10">
+    <h2>External feeds</h2>
+    <ul>
+      <li><a href="http://www.cnn.com/2010/US/studentnews/08/26/newsquiz.fri/index.html#">CNN: Media Literacy Question of the Day</a></li>
+      <li><a href="http://ireport.cnn.com/ir-topic-stories.jspa?topicId=484562">CNN: What, who motivates students? Send us an iReport</a></li>
+      <li><a href="http://www.cnn.com/2010/US/studentnews/08/12/heroes.teacher.parent.guide/index.html">BBC: New Orleans Rising - Teacher and Parent Guide</a></li>
+    </ul>
+  </div>
+</div>
+<div class="clear"></div>
+<%= yield -%>
+<hr/>
+<div class="container_24">
+  <div class="grid_12">
+    <input type="text" name="search" />
+    <input type="submit" onclick="javascript: alert('Serach does not work yet, but good to know you tried');" value="Search for students and teachers" />
+  </div>
+  <div class="grid_11">
+    6 people in your network online now:
+    <input type="submit" onclick="javascript: alert('Serach does not work yet, but good to know you tried');" value="Chat now" />
+  </div>
+</div>
+</body>
+</html>
