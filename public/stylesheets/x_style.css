@@ -75,6 +75,10 @@ div.education_news ul, div.education_news ul li {
     list-style: none;
 }
 
+.notable_events li {
+    padding-top: 10px;
+}
+
 .notable_events li a.action {
     font-size: 75%;
 }
