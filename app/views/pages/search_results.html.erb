@@ -1,3 +1,10 @@
+<%
+users = [
+  {:name => "Erica Bensen", :image => "/images/student_picture.jpg", :grade => "11th"},
+  {:name => "Neil Swan", :image => "/images/student_picture2.jpg", :grade => "10th"},
+  {:name => "Josh Bender", :image => "/images/student_picture3.jpg", :grade => "12th"}
+]
+%>
 <div class="container_24">
   <div class="grid_20">
     <h1>
@@ -16,27 +23,21 @@
 </div>
 <div class="container_24">
   <div class="grid_22">
-    <table>
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Details</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Erica Benson</td>
-          <td><a href="/pages/student_detail">Details</a></td>
-        </tr>
-        <tr>
-          <td>Tek Kim</td>
-          <td><a href="/pages/student_detail">Details</a></td>
-        </tr>
-        <tr>
-          <td>Todd Stevenson</td>
-          <td><a href="/pages/student_detail">Details</a></td>
-        </tr>
-      </tbody>
-    </table>
+    <% users.each do |u| %>
+    <div class="tile">
+            <a href="/pages/student_detail"><img src="<%= u[:image] -%>"></a><br/>
+      <a href="/pages/student_detail"><%= u[:name] -%></a>
+    </div>
+    <% end %>
   </div>
 </div>
+<script type="text/javascript">
+$(".tile").hover(
+  function () {
+    $(this).addClass("hover");
+  },
+  function () {
+    $(this).removeClass("hover");
+  }
+);
+</script>

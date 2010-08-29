@@ -85,3 +85,17 @@ div.education_news ul, div.education_news ul li {
     width: 25px;
     height: auto;
 }
+
+.tile {
+    float: left;
+    padding: 5px;
+    background: #fff;
+}
+
+.tile.hover {
+    background: #ddd;
+}
+.tile img {
+    width: 100px;
+    height: 125px;
+}
