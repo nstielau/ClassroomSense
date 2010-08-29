@@ -7,7 +7,7 @@ h1 {
 }
 
 #header {
-    background-color: #D8C2B4;
+    padding-top: 5px;
 }
 
 #header h2 {
@@ -63,4 +63,12 @@ th {
 }
 td.numeric {
     text-align: right;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
 }
