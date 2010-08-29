@@ -11,7 +11,7 @@
 </div>
 <div class="container_24">
   <div class="grid_8">
-    <%= widget "Information" do %>
+    <%= widget "Student Info" do %>
       <%= render :partial => "student_info" %>
     <% end %>
     <%= widget "Guardian Contact Info" do %>
@@ -30,21 +30,21 @@
         <tbody>
           <tr>
             <td>Math 1</td>
-            <td>101</td>
+            <td class="numeric">101</td>
             <td><a href="/pages/teacher_detail">Mary Smith</a></td>
-            <td>3</td>
+            <td class="numeric">3</td>
           </tr>
           <tr>
             <td>Social Studies</td>
-            <td>137</td>
+            <td class="numeric">137</td>
             <td><a href="/pages/teacher_detail">Joe Arrington</a></td>
-            <td>2</td>
+            <td class="numeric">2</td>
           </tr>
           <tr>
             <td>History</td>
-            <td>121</td>
+            <td class="numeric">121</td>
             <td><a href="/pages/teacher_detail">Doug Melzer</a></td>
-            <td>6</td>
+            <td class="numeric">6</td>
           </tr>
         </tbody>
       </table>
@@ -52,9 +52,9 @@
   </div>
   <div class="grid_8">
     <%= widget "Attendences" do %>
-      <p>GRAPH</p>
+        <img src="/images/graphs/student_detail_absenteeism.jpg"/>
     <% end %>
-    <%= widget "Discipline" do %>
+    <%= widget "Disciplinary Actions" do %>
       <ul>
         <li>Referrals: <%= (rand * 50).to_i %></li>
         <li>Truancy: <%= (rand * 50).to_i %></li>
@@ -63,9 +63,9 @@
       </ul>
     <% end %>
   </div>
-  <div class="grid_7">
+  <div class="grid_8">
     <%= widget "Test Scores" do %>
-      <p>GRAPH</p>
+        <img src="/images/graphs/student_detail_test_scores.jpg"/>
     <% end %>
   </div>
   <div class="clear"></div>

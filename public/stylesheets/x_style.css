@@ -57,3 +57,10 @@ ul.address, li.address {
     width: 16px;
     height: 16px;
 }
+
+th {
+    text-align: left;
+}
+td.numeric {
+    text-align: right;
+}
