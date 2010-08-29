@@ -1,16 +1,20 @@
+<% if false %>
 <div class="container_24">
   <div class="grid_20">
     <a href="/pages/student_overview">Student Overview</a>
     <a href="/pages/teacher_overview">Teacher Overview</a>
   </div>
 </div>
+<% end %>
 <div class="container_24">
   <div class="grid_8">
     <%= widget "Absences Today" do %>
       <img src="/images/graphs/dash_absent_today.jpg"/>
+      <a href="/pages/search_results">Who's absent today?</a>
     <% end %>
     <%= widget "Total Absences" do %>
       <div id="placeholder" style="width:285px;height:150px;"></div>
+      Click graph to see matching students
     <% end %>
     <%= widget "Teachers Absent Today" do %>
     <ul>
