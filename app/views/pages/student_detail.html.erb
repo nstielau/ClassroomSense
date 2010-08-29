@@ -14,7 +14,7 @@
     <%= widget "Information" do %>
       <%= render :partial => "student_info" %>
     <% end %>
-    <%= widget "Contact Info" do %>
+    <%= widget "Guardian Contact Info" do %>
       <%= render :partial => "student_contact_info" %>
     <% end %>
     <%= widget "Schedule" do %>
@@ -50,7 +50,7 @@
     <%= widget "Attendences" do %>
       <p>GRAPH</p>
     <% end %>
-    <%= widget "Disciplined" do %>
+    <%= widget "Discipline" do %>
       <ul>
         <li>Referrals: <%= (rand * 50).to_i %></li>
         <li>Truancy: <%= (rand * 50).to_i %></li>

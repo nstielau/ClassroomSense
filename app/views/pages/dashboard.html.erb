@@ -5,16 +5,16 @@
 </div>
 <div class="container_24">
   <div class="grid_20">
-    <a href="/pages/student_overview">Teacher Overview</a>
-    <a href="/pages/teacher_overview">Student Overview</a>
+    <a href="/pages/student_overview">Student Overview</a>
+    <a href="/pages/teacher_overview">Teacher Overview</a>
   </div>
 </div>
 <div class="container_24">
   <div class="grid_8">
-    <%= widget "Today's Absenteeism Rate" do %>
+    <%= widget "Absences Today" do %>
       <p>GRAPH</p>
     <% end %>
-    <%= widget "Consequative Days Late" do %>
+    <%= widget "Consecutive Days Late" do %>
       <p>GRAPH</p>
     <% end %>
     <%= widget "Student Behavior" do %>
@@ -22,16 +22,16 @@
     <% end %>
   </div>
   <div class="grid_8">
-    <%= widget "Teacher Absences" do %>
+    <%= widget "Teachers Absent Today" do %>
     <ul>
-      <li>Teacher <a href="/pages/teacher_detail">Louisa Bell</a> is absent for the 3rd time year</li>
-      <li>Teacher <a href="/pages/teacher_detail">Manuel Santiago</a> is absent for the 1st time year</li>
+      <li>Teacher <a href="/pages/teacher_detail">Louisa Bell</a> Room 121</li>
+      <li>Teacher <a href="/pages/teacher_detail">Manuel Santiago</a> Room 109</li>
     </ul>
     <% end %>
     <%= widget "Notable Events" do %>
     <ul>
-      <li>Student <a href="/pages/student_detail">John Little</a> is absent for the 10th time this year</li>
-      <li>Student <a href="/pages/student_detail">Erica Schmidt</a> improved 11% on her test scores since last month</li>
+      <li><img src="/images/student_picture.jpg"/> Student <a href="/pages/student_detail">John Little</a> is absent for the 10th time this year</li>
+      <li><img src="/images/student_picture2.jpg"/> Student <a href="/pages/student_detail">Erica Schmidt</a> improved 11% on her test scores since last month</li>
     </ul>
     <% end %>
   </div>

@@ -32,6 +32,16 @@ h1 {
     font-size: 125%;
 }
 
+.widget ul li {
+    list-style: none;
+    margin-left: 5px;
+}
+
+.widget ul li img {
+    width: 20px;
+    height: 20px;
+}
+
 ul.address, li.address {
     list-style: none;
 }
