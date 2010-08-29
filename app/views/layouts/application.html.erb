@@ -16,25 +16,23 @@
     <h2 style="font-size: 250%;padding:0;margin:0;">Sun</h2><h3 style="font-size: 175%;position:relative;top:-10px;"><%= Time.now.strftime("%b") %> <%= Time.now.day %></h3>
   </div>
   <% end %>
-  <div class="grid_18 weather">
+  <div class="grid_12 weather">
     <h1 style="font-size: 275%">Mission High School</h1>
   </div>
+  <div class="grid_9">
+    <div style="float:right;padding-top:10px" align="right">
+      <% if params[:action] != 'home' %>
+      <input type="text" name="search" />
+      <input type="submit" onclick="javascript: window.location = '/pages/search_results';" value="Search for students" />
+      <% end %>
+      <a style="float:right;font-size: 125%;" href="https://spreadsheets.google.com/viewform?formkey=dEczR3l0M0ZXZ3BwblBtM1Fyb0w0Q2c6MQ">Send us feedback</a><br/>
+    </div>
+  </div>
+
 </div>
 <div class="clear"></div>
 <%= yield -%>
 <hr/>
-<% if params[:action] != 'home' %>
-<div class="container_24">
-  <div class="grid_12">
-    <input type="text" name="search" />
-    <input type="submit" onclick="javascript: window.location = '/pages/search_results';" value="Search for students" />
-  </div>
-  <div class="grid_11">
-    <div style="float:right">
-      <a style="font-size: 125%;" href="https://spreadsheets.google.com/viewform?formkey=dEczR3l0M0ZXZ3BwblBtM1Fyb0w0Q2c6MQ">Send us feedback</a>
-    </div>
-  </div>
-</div>
-<% end %>
+
 </body>
 </html>
