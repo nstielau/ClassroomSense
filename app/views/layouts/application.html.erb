@@ -34,6 +34,7 @@
 <div class="clear"></div>
 <%= yield -%>
 <hr/>
+<% if params[:action] != 'home' %>
 <div class="container_24">
   <div class="grid_12">
     <input type="text" name="search" />
@@ -44,5 +45,6 @@
     <input type="submit" onclick="javascript: alert('Serach does not work yet, but good to know you tried');" value="Chat now" />
   </div>
 </div>
+<% end %>
 </body>
 </html>
