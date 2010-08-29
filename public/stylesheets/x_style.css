@@ -71,7 +71,7 @@ a {
 a:hover {
     text-decoration: none;
 }
-ul.education_news, ul.education_news li {
+div.education_news ul, div.education_news ul li {
     list-style: none;
 }
 
