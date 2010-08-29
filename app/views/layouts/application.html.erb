@@ -18,7 +18,9 @@
       <img style="float:left;padding:5px;" src="/images/cloudy.gif"/> Afternoon: 55°F Cloudy<br style="clear:both"/>
     </div>
   </div>
-  <div class="grid_4"><h2 style="font-size: 250%"><%= Time.now.strftime("%B") %><br/><%= Time.now.strftime("%d %Y") %></h2></div>
+  <div class="grid_4" align="center">
+    <h2 style="font-size: 250%;padding:0;margin:0;">Sun</h2><h3 style="font-size: 175%;position:relative;top:-10px;"><%= Time.now.strftime("%b") %> <%= Time.now.day %></h3>
+  </div>
   <div class="grid_10 education_news">
     <ul style="padding-top:10px;">
       <li><a href="http://www.cnn.com/2010/US/studentnews/08/26/newsquiz.fri/index.html#">CNN: Media Literacy Question of the Day</a></li>
