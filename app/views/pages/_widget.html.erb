@@ -1,4 +1,4 @@
-<div class="widget bordered">
+<div class="widget bordered <%= title.downcase.gsub(' ', '_') -%>">
   <h2><%= title -%></h2>
   <%= content -%>
 </div>
