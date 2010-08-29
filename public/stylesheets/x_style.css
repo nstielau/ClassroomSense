@@ -45,3 +45,10 @@ h1 {
 ul.address, li.address {
     list-style: none;
 }
+
+.weather img {
+    float: left;
+    padding: 5px;
+    width: 16px;
+    height: 16px;
+}

@@ -11,15 +11,13 @@
   <div class="grid_4">
     <img src="/images/logo.jpg"/>
   </div>
-  <div class="grid_5">
+  <div class="grid_5 weather">
     <h2>Weather</h2>
     <div style="float: left; border: none;">
-      65°F<br/>
-      Current: Partly Cloudy<br/>
-      Wind: W at 20 mph<br/>
-      Humidity: 59%<br/>
+      <img style="float:left;padding:5px;" src="/images/partly_cloudy.gif"/> Morning: 49°F Partly Cloudy<br style="clear:both"/>
+      <img style="float:left;padding:5px;" src="/images/partly_cloudy.gif"/> Noon: 65°F Partly Cloudy<br style="clear:both"/>
+      <img style="float:left;padding:5px;" src="/images/cloudy.gif"/> Afternoon: 55°F Cloudy<br style="clear:both"/>
     </div>
-    <img style="float:left;padding:5px;" src="/images/partly_cloudy.gif"/>
   </div>
   <div class="grid_4"><h2 style="font-size: 250%"><%= Time.now.strftime("%B") %><br/><%= Time.now.strftime("%d %Y") %></h2></div>
   <div class="grid_10">
