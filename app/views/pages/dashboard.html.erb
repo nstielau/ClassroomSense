@@ -16,6 +16,9 @@
       <div id="placeholder" style="width:285px;height:150px;"></div>
       Click graph to see matching students
     <% end %>
+    <%= widget "YTD Absenteeism" do %>
+        <img src="/images/graphs/student_detail_tests_math.jpg"/>
+    <% end %>
     <%= widget "Teachers Absent Today" do %>
     <ul>
       <li><a href="/pages/teacher_detail">Louisa Bell</a> Current: Algebra 2, Room 121</li>
@@ -26,13 +29,20 @@
   <div class="grid_8">
     <%= widget "Notable Events" do %>
     <ul>
-      <li><img src="/images/student_picture.jpg"/> Student <a href="/pages/student_detail">John Little</a> is absent for the 10th time this year. <a class="action" href="#">(contact guardian</a></li>
-      <li><img src="/images/student_picture2.jpg"/> Student <a href="/pages/student_detail">Erica Schmidt</a> improved 11% on her test scores this month. <a class="action" href="#">(contact guardian)</a></li>
-      <li><img src="/images/teacher_picture.jpg"/>Teacher <a href="/pages/teacher_detail">Richard Barrymore</a>'s class attendance improved 20% this quarter. <a class="action" href="#">(email)</a></li>
+      <li><img src="/images/student_picture.jpg"/> Student <a href="/pages/student_detail">John Little</a> is absent for the 10th time this year. <a class="action" href="#">contact guardian</a></li>
+      <li><img src="/images/student_picture2.jpg"/> Student <a href="/pages/student_detail">Erica Schmidt</a> improved 11% on her test scores this month. <a class="action" href="#">contact guardian</a></li>
+      <li><img src="/images/teacher_picture.jpg"/>Teacher <a href="/pages/teacher_detail">Richard Barrymore</a>'s class attendance improved 20% this quarter. <a class="action" href="#">email</a></li>
     </ul>
     <% end %>
     <%= widget "Student Behavior" do %>
       <img src="/images/graphs/dashboard_student_behavior.jpg"/>
+    <% end %>
+    <%= widget "Education News" do %>
+    <ul style="padding-top:10px;">
+      <li><a href="http://www.cnn.com/2010/US/studentnews/08/26/newsquiz.fri/index.html#">CNN: Media Literacy Question of the Day</a></li>
+      <li><a href="http://ireport.cnn.com/ir-topic-stories.jspa?topicId=484562">CNN: What, who motivates students? </a></li>
+      <li><a href="http://www.cnn.com/2010/US/studentnews/08/12/heroes.teacher.parent.guide/index.html">BBC: New Orleans Teacher and Parent Guide</a></li>
+    </ul>
     <% end %>
   </div>
   <div class="grid_8">
@@ -41,6 +51,13 @@
     <% end %>
     <%= widget "Budget Remaining" do %>
       <img src="/images/graphs/dashboard_budget.jpg"/>
+    <% end %>
+    <%= widget "Weather" do %>
+      <div style="float: left; border: none; padding-top:10px;">
+        <img style="float:left;padding:5px;" src="/images/partly_cloudy.gif"/> Morning: 49°F Partly Cloudy<br style="clear:both"/>
+        <img style="float:left;padding:5px;" src="/images/partly_cloudy.gif"/> Noon: 65°F Partly Cloudy<br style="clear:both"/>
+        <img style="float:left;padding:5px;" src="/images/cloudy.gif"/> Afternoon: 55°F Cloudy<br style="clear:both"/>
+      </div>
     <% end %>
   </div>
   <div class="clear"></div>

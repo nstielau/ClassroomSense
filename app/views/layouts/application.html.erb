@@ -8,25 +8,16 @@
 </head>
 <body>
 <div class="container_24" id="header">
-  <div align="center" class="grid_4">
-    <a href="/"><img src="/images/logo.jpg"/></a>
+  <div class="grid_3" align="center">
+    <a href="/"><img style="width:75px" src="/images/logo.jpg"/></a>
   </div>
-  <div class="grid_5 weather">
-    <div style="float: left; border: none; padding-top:10px;">
-      <img style="float:left;padding:5px;" src="/images/partly_cloudy.gif"/> Morning: 49°F Partly Cloudy<br style="clear:both"/>
-      <img style="float:left;padding:5px;" src="/images/partly_cloudy.gif"/> Noon: 65°F Partly Cloudy<br style="clear:both"/>
-      <img style="float:left;padding:5px;" src="/images/cloudy.gif"/> Afternoon: 55°F Cloudy<br style="clear:both"/>
-    </div>
-  </div>
-  <div class="grid_4" align="center">
+  <% if false %>
+  <div class="grid_3">
     <h2 style="font-size: 250%;padding:0;margin:0;">Sun</h2><h3 style="font-size: 175%;position:relative;top:-10px;"><%= Time.now.strftime("%b") %> <%= Time.now.day %></h3>
   </div>
-  <div class="grid_10 education_news">
-    <ul style="padding-top:10px;">
-      <li><a href="http://www.cnn.com/2010/US/studentnews/08/26/newsquiz.fri/index.html#">CNN: Media Literacy Question of the Day</a></li>
-      <li><a href="http://ireport.cnn.com/ir-topic-stories.jspa?topicId=484562">CNN: What, who motivates students? Send us an iReport</a></li>
-      <li><a href="http://www.cnn.com/2010/US/studentnews/08/12/heroes.teacher.parent.guide/index.html">BBC: New Orleans Rising - Teacher and Parent Guide</a></li>
-    </ul>
+  <% end %>
+  <div class="grid_18 weather">
+    <h1 style="font-size: 275%">Mission High School</h1>
   </div>
 </div>
 <div class="clear"></div>

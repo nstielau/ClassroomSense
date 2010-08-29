@@ -24,9 +24,10 @@ users = [
 <div class="container_24">
   <div class="grid_22">
     <% users.each do |u| %>
-    <div class="tile">
+    <div class="tile" align="center">
             <a href="/pages/student_detail"><img src="<%= u[:image] -%>"></a><br/>
-      <a href="/pages/student_detail"><%= u[:name] -%></a>
+            <a href="/pages/student_detail"><%= u[:name] -%></a><br/>
+            <%= u[:grade] -%> grade
     </div>
     <% end %>
   </div>
