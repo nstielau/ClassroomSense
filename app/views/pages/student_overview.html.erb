@@ -9,18 +9,12 @@
   </div>
 </div>
 <div class="container_24">
-  <div class="grid_8">
-    <%= widget "Avg. Attendance" do %>
-      <strong>(school vs. district)</strong>
-      <p>GRAPH</p>
-      <strong>(school vs. district)</strong>
-      <p>GRAPH</p>
-    <% end %>
-    <%= widget "Contact Info" do %>
-      <%= render :partial => "teacher_contact_info" %>
+  <div class="grid_12">
+    <%= widget "Attendance Trends" do %>
+      <img class="graph" style="width: 450px;" src="/images/graphs/student_overview_absenteeism.jpg"/>
     <% end %>
     <%= widget "Absenteeism by Ethnicity" do %>
-      <p>GRAPH</p>
+      <img class="graph" src="/images/graphs/student_overview_absenteeism_by_ethnic.jpg"/>
     <% end %>
   </div>
   <div class="grid_8">
@@ -30,8 +24,6 @@
       <li>Student <a href="/pages/student_detail">Erica Schmidt</a> improved 11% on her test scores since last month</li>
     </ul>
     <% end %>
-  </div>
-  <div class="grid_7">
   </div>
   <div class="clear"></div>
 </div>
