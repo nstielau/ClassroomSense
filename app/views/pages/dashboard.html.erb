@@ -66,12 +66,9 @@ var plot;
 $(function () {
     // generate a dataset
     var d1 = [[0,100], [1,50], [2,20], [3,10], [4, 16]];
-
     var data = [{ data: d1, color: "#ccc" }];
-
     var placeholder = $("#placeholder");
-
-    var ticks = [[0.25, "1 day"], [1.25, "2-3 days"], [2.25, "4-6 days"], [3.25, "6-10 days"], [4.25, "> 10 days"]];
+    var ticks = [[0.25, "1 day"], [1.25, "2-3 days"], [2.25, "4-6 days"], [3.25, "6-10 days"], [4.25, "10+ days"]];
 
     // plot it
     plot = $.plot(placeholder, data, {
