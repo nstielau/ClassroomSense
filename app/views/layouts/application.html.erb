@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="container_24" id="header">
-  <div class="grid_15" align="left">
+  <div class="grid_15" style="align: left; vertical-align: middle;">
     <a href="/"><img src="/images/logo.jpg"/></a>
     <span style="font-size: 275%; font-weight: bold;">Mission High School</span>
   </div>
@@ -16,11 +16,9 @@
     <div style="float:right;padding-top:10px" align="right">
       <% if params[:action] != 'home' %>
       <input type="text" name="search" />
-      <input type="submit" onclick="javascript: window.location = '/pages/search_results';" value="Search" />
+      <input type="submit" onclick="javascript: window.location = '/pages/search_results';" value="Search" /><br/>
       <% end %>
-
-		  <div class="grid_3">
-		    <h2 style="font-size: 250%;padding:0;margin:0;">Sun</h2><h3 style="font-size: 175%;position:relative;top:-10px;"><%= Time.now.strftime("%b") %> <%= Time.now.day %></h3>
+			<%= Time.now.strftime("%A, %B %d, %Y") %></h3>
 		  </div>
 
       <!-- <a style="float:right;font-size: 125%;" href="https://spreadsheets.google.com/viewform?formkey=dEczR3l0M0ZXZ3BwblBtM1Fyb0w0Q2c6MQ">Send us feedback</a><br/> -->
