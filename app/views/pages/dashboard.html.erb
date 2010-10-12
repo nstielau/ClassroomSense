@@ -36,6 +36,24 @@
       <img src="/images/graphs/dashboard_student_behavior.jpg"/>
     <% end %>
     <%= widget "District Updates" do %>
+    <div style="border: none; padding-top:10px;">
+			<table width="100%">
+				<thead>
+					<tr>
+						<th>Morning</th>
+						<th>Noon</th>
+						<th>Afternoon</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><img style="padding:5px;" src="/images/partly_cloudy.gif" alt="Partly Cloudy"/> 49°F</td>
+						<td><img style="padding:5px;" src="/images/partly_cloudy.gif" alt="Partly Cloudy" /> 65°F</td>
+						<td><img style="padding:5px;" src="/images/cloudy.gif" alt="Cloudy" /> 55°F</td>
+					</tr>
+				</tbody>
+			</table>						
+    </div>
     <ul style="padding-top:10px;">
       <li><a href="http://www.cnn.com/2010/US/studentnews/08/26/newsquiz.fri/index.html#">New interim benchmark results released</a></li>
       <li>Don't forget: IEPs due this Friday!</li>
@@ -49,28 +67,6 @@
     <% end %>
     <%= widget "Budget Remaining" do %>
       <img src="/images/graphs/dashboard_budget.jpg"/>
-    <% end %>
-    <%= widget "Weather" do %>
-      <div style="border: none; padding-top:10px;">
-				<table width="100%">
-					<thead>
-						<tr>
-							<th>Morning</th>
-							<th>Noon</th>
-							<th>Afternoon</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>
-								<img style="padding:5px;" src="/images/partly_cloudy.gif" alt="Partly Cloudy"/> 49°F
-							</td>
-							<td><img style="padding:5px;" src="/images/partly_cloudy.gif" alt="Partly Cloudy" /> 65°F</td>
-							<td><img style="padding:5px;" src="/images/cloudy.gif" alt="Cloudy" /> 55°F</td>
-						</tr>
-					</tbody>
-				</table>						
-      </div>
     <% end %>
   </div>
   <div class="clear"></div>
