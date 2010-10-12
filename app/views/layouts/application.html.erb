@@ -17,11 +17,11 @@
   </div>
   <div class="grid_9">
     <div style="float:right;padding-top:10px" align="right">
+			<span style="font-style: italic;">Today is <%= Time.now.strftime("%a %b %d, %Y") %>.</span><br/>
       <% if params[:action] != 'home' %>
       <input type="text" name="search" />
-      <input type="submit" onclick="javascript: window.location = '/pages/search_results';" value="Search" /><br/>
+      <input type="submit" onclick="javascript: window.location = '/pages/search_results';" value="Search" />
       <% end %>
-			<i>Today is <%= Time.now.strftime("%a %b %d, %Y") %>.</i>
 		  </div>
 
       <!-- <a style="float:right;font-size: 125%;" href="https://spreadsheets.google.com/viewform?formkey=dEczR3l0M0ZXZ3BwblBtM1Fyb0w0Q2c6MQ">Send us feedback</a><br/> -->
