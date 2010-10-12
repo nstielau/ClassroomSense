@@ -8,16 +8,16 @@
 <% end %>
 <div class="container_24">
   <div class="grid_8">
-    <%= widget "Absences Today" do %>
+    <%= widget "Student Absences Today" do %>
       <a href="/pages/search_results"><img src="/images/graphs/dash_absent_today.jpg"/></a>
     <% end %>
-    <%= widget "Absences YTD" do %>
+    <%= widget "Student Absences YTD" do %>
       <div id="placeholder" style="width:285px;height:150px;"></div>
     <% end %>
-    <%= widget "Absences Past Three Weeks" do %>
+    <%= widget "Student Absences Past 3 Weeks" do %>
         <img src="/images/graphs/abs_by_eth.png"/>
     <% end %>
-    <%= widget "Teachers Absent Today" do %>
+    <%= widget "Teacher Absences Today" do %>
     <ul>
       <li><a href="/pages/teacher_detail">Louisa Bell</a> Current: Algebra 2, Room 121</li>
       <li><a href="/pages/teacher_detail">Manuel Santiago</a> 10:45am: English 1, Room 109</li>
@@ -25,16 +25,14 @@
     <% end %>
   </div>
   <div class="grid_8">
-    <%= widget "Notable Events" do %>
-    <ul>
-      <li><img src="/images/student_picture.jpg"/> Student <a href="/pages/student_detail">John Little</a> is absent for the 10th time this year. <a class="action" href="#">contact guardian</a></li>
-      <li><img src="/images/student_picture2.jpg"/> Student <a href="/pages/student_detail">Erica Schmidt</a> improved 11% on her test scores this month. <a class="action" href="#">contact guardian</a></li>
-      <li><img src="/images/teacher_picture.jpg"/>Teacher <a href="/pages/teacher_detail">Richard Barrymore</a>'s class attendance improved 20% this quarter. <a class="action" href="#">email</a></li>
-    </ul>
+    <%= widget "Most Improved Classrooms" do %>
+      <img src="/images/graphs/most_improved_classrooms.png"/>
     <% end %>
     <%= widget "Student Behavior" do %>
       <img src="/images/graphs/dashboard_student_behavior.jpg"/>
     <% end %>
+  </div>
+  <div class="grid_8">
     <%= widget "District Updates" do %>
     <div style="border: none; padding-top:10px;">
 			<table width="100%" id="weather">
@@ -60,10 +58,12 @@
       <li><a href="http://www.cnn.com/2010/US/studentnews/08/12/heroes.teacher.parent.guide/index.html">New resource: Parent engagement hotline</a></li>
     </ul>
     <% end %>
-  </div>
-  <div class="grid_8">
-    <%= widget "Most Improved Classrooms" do %>
-      <img src="/images/graphs/most_improved_classrooms.png"/>
+    <%= widget "Notable Events" do %>
+    <ul>
+      <li><img src="/images/student_picture.jpg"/> Student <a href="/pages/student_detail">John Little</a> is absent for the 10th time this year. <a class="action" href="#">contact guardian</a></li>
+      <li><img src="/images/student_picture2.jpg"/> Student <a href="/pages/student_detail">Erica Schmidt</a> improved 11% on her test scores this month. <a class="action" href="#">contact guardian</a></li>
+      <li><img src="/images/teacher_picture.jpg"/>Teacher <a href="/pages/teacher_detail">Richard Barrymore</a>'s class attendance improved 20% this quarter. <a class="action" href="#">email</a></li>
+    </ul>
     <% end %>
     <%= widget "Budget Remaining" do %>
       <img src="/images/graphs/dashboard_budget.jpg"/>
