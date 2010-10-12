@@ -28,44 +28,12 @@
     <%= widget "Guardian Contact Info" do %>
       <%= render :partial => "student_contact_info" %>
     <% end %>
-    <%= widget "Schedule" do %>
-      <table class="hor-minimalist-a">
-        <thead>
-          <tr>
-            <th>Class</th>
-            <th>Room</th>
-            <th>Teacher</th>
-            <th>Period</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Math 1</td>
-            <td class="numeric">101</td>
-            <td><a href="/pages/teacher_detail">Mary Smith</a></td>
-            <td class="numeric">3</td>
-          </tr>
-          <tr>
-            <td>Social Studies</td>
-            <td class="numeric">137</td>
-            <td><a href="/pages/teacher_detail">Joe Arrington</a></td>
-            <td class="numeric">2</td>
-          </tr>
-          <tr>
-            <td>History</td>
-            <td class="numeric">121</td>
-            <td><a href="/pages/teacher_detail">Doug Melzer</a></td>
-            <td class="numeric">6</td>
-          </tr>
-        </tbody>
-      </table>
-    <% end %>
-  </div>
+	</div>
   <div class="grid_8">
-    <%= widget "Attendences" do %>
+    <%= widget "Attendance" do %>
         <img src="/images/graphs/student_detail_absenteeism.jpg"/>
     <% end %>
-    <%= widget "Disciplinary Actions" do %>
+    <%= widget "Behavior" do %>
       <ul>
         <li>Referrals: <%= (rand * 50).to_i %></li>
         <li>Truancy: <%= (rand * 50).to_i %></li>
